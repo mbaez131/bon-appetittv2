@@ -14,42 +14,34 @@ import Shop from './../Shop/Shop'
 
 const NavBar = () => {
 
-    const [hidden, setHidden] = useState(false);
-
-    const toggleButton = () => {
-        if (!hidden) {
-            setHidden(true);
-        } else {
-            setHidden(false)
-        }
-    }
-
     return (
         <Router>
-            <div class="container">
 
-               
-
-                <nav class="navbar">
+            <nav className="navbar">
                     <div class="hamburger--container">
                         <div class="hamburger--line line--1"></div>
                         <div class="hamburger--line line--2"></div>
                         <div class="hamburger--line line--3"></div>
                     </div>
-
-                    <ul class="ul--navlist">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Recipes</a></li>
-                        <li><a href="#">Restaurants</a></li>
-                        <li><a href="#">Shop</a></li>
+                    <ul className="ul--navlist">
+                        
+                        <li>
+                            <Link to='/'>Home</Link>
+                        </li>
+                        <li>
+                            <Link to='/Restaurants'>Restaurants</Link>
+                        </li>
+                        <li>
+                            <Link to='/Recipes'>Recipes</Link>
+                        </li>
+                        <li>
+                            <Link to='/Shop'>Shop</Link>
+                        </li>
+                        <li>
+                            <Link to='/Contact'>Contact Us</Link>
+                        </li>
                     </ul>
                 </nav>
-
-                <div class="hero--wrapper">
-                    <h1 class="hero--text">You Are What You Eat ! Bon Appétit !
-</h1>
-                </div>
-            </div>
 
 
 
