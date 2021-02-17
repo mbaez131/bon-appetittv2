@@ -4,7 +4,7 @@ import {
     Switch,
     Route,
     Link
-  } from "react-router-dom";
+} from "react-router-dom";
 
 import Home from './../Home/Home'
 import Contact from './../Contact/Contact'
@@ -16,61 +16,64 @@ const NavBar = () => {
 
     const [hidden, setHidden] = useState(false);
 
-    const toggleButton = () =>{
-        if(!hidden){
+    const toggleButton = () => {
+        if (!hidden) {
             setHidden(true);
-        } else{
+        } else {
             setHidden(false)
         }
     }
 
-    return(
+    return (
         <Router>
-            <div>
-                <nav>
-                <a id="logoAnchor"><div id="pcLogo"><Link to="/"><p>PC</p></Link></div></a>
-                <label className="burger" htmlFor="toggle">&#9776;</label>
-                <input type="checkbox" id="toggle" name="toggle" onClick={toggleButton} />
-                    <ul className={hidden ? 'navbar' : 'links'}>
-                        
-                        <li className="navLink">
-                            <Link to='/'>Home</Link>
-                        </li>
-                        <li className="navLink">
-                            <Link to='/Restaurants'>Restaurants</Link>
-                        </li>
-                        <li className="navLink">
-                            <Link to='/Recipes'>Recipes</Link>
-                        </li>
-                        <li className="navLink">
-                            <Link to='/Shop'>Shop</Link>
-                        </li>
-                        <li className="navLink">
-                            <Link to='/Contact'>Contact Us</Link>
-                        </li>
+            <div class="container">
+
+               
+
+                <nav class="navbar">
+                    <div class="hamburger--container">
+                        <div class="hamburger--line line--1"></div>
+                        <div class="hamburger--line line--2"></div>
+                        <div class="hamburger--line line--3"></div>
+                    </div>
+
+                    <ul class="ul--navlist">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Restaurants</a></li>
+                        <li><a href="#">Shop</a></li>
                     </ul>
                 </nav>
 
-                <Switch>
-                    <Route exact path="/">
-                        <Home />
-                    </Route>
-                    <Route exact path="/Restaurants">
-                        <Restaurant />
-                    </Route>
-                    <Route exact path="/Recipes">
-                      <Recipes />
-                    </Route>
-                    <Route exact path="/Shop">
-                      <Shop />
-                    </Route>
-                    <Route exact path="/Contact">
-                        <Contact />
-                    </Route>
-                </Switch>
+                <div class="hero--wrapper">
+                    <h1 class="hero--text">You Are What You Eat ! Bon Appétit !
+</h1>
+                </div>
             </div>
-        </Router>
+
+
+
+            <Switch>
+                <Route exact path="/">
+                    <Home />
+                </Route>
+                <Route exact path="/Restaurants">
+                    <Restaurant />
+                </Route>
+                <Route exact path="/Recipes">
+                    <Recipes />
+                </Route>
+                <Route exact path="/Shop">
+                    <Shop />
+                </Route>
+                <Route exact path="/Contact">
+                    <Contact />
+                </Route>
+            </Switch>
+            
+        </Router >
     )
+    
 };
 
 export default NavBar
