@@ -121,6 +121,61 @@ header{
     animation: neon 100ms ease-in-out infinite ;
 }
 
+/* Recipe page's CSS */
+.hero_recipes{
+    width: 100vw;
+    height: 35vh;
+    background-color: #62c6be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_recipes input {
+    -webkit-appearance: none;
+    border: none;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.recipes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.recipe-image{
+    width: 100%;
+}
+
+.Recipe-Cards {
+    width: 500px;
+    height: fit-content;
+    border: black 2px 2px;
+}
+
+.Recipe-Cards h2{
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Recipe-Cards button{
+    display: block;
+    margin: auto;
+    -webkit-appearance: none;
+    border: none;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.Hidden-Recipe{
+    display: none;
+}
+
+.Shown-Recipe {
+
+}
+
 @keyframes neon {
     from {
       text-shadow:
