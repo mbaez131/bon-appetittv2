@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactPlayer from "react-player"
-import logo from '../imgs/bon-logo.png'
+
 
 const Home = () => {
     return (
         <main>
           <div class="home-logo">
-          <img src={logo} alt="webiste logo"/>
+          <img src="./imgs/bon-logo.png" alt="webiste logo"/>
  </div>
 
              <div class="hero-image">
@@ -21,14 +21,14 @@ const Home = () => {
 
 </div>
   <div class="home-logo">
-          <img src={logo} alt="webiste logo"/>
+          <img src="./imgs/bon-logo.png" alt="webiste logo"/>
  </div>
  <ReactPlayer
         url="https://www.youtube.com/watch?v=3zLC2QDNBuc"
       />
 
 <div class="home-logo">
-          <img src={logo} alt="webiste logo"/>
+          <img src="./imgs/bon-logo.png" alt="webiste logo"/>
  </div>
 
        <ReactPlayer
