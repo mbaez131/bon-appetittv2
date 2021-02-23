@@ -7,7 +7,7 @@ body{
     background-color: teal;
 }
 .hero-image{
-    background-image: url(../src/Components/imgs/bon2.jpeg);
+   
     height: 100%;
     width: 100%;
 
@@ -21,7 +21,7 @@ body{
     margin-bottom: 5px;
 }
 .container{
-    background-image: url(../src/Components/imgs/bon2.jpeg);
+    background-image: url(./Components/Home/bon2.jpeg);
     background-position: center;
     height: 50vh;
     width: 100%;
@@ -430,6 +430,5 @@ body{
   font-size: 17px;
   margin-bottom: 80px;
   }
-  
   
   

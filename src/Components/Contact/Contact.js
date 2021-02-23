@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../imgs/bon-logo.png';
+
 
 
 const defaultState = {
@@ -69,7 +69,7 @@ class Form extends React.Component {
             <h1 className="l-heading">Contact Us</h1>
             <form onSubmit={this.handleSubmit} action="https://formsubmit.co/thompsontyerek5@gmail.com" method="POST">
             <div class="home-logo">
-          <img src={logo} alt="webiste logo"/>
+          <img src="./imgs/bon-logo.png" alt="webiste logo"/>
  </div>
               <div className="form-group">
                 <label for="name">Name</label>

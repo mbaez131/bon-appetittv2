@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './Components/Navbar/Navbar'
+
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <header className="App-header">
         <Navbar />
       </header>
+
+     
     </div>
   );
 }
