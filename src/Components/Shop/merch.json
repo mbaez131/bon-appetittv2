@@ -2,42 +2,42 @@
 [
 
     {
-    "img" : "tote-bon.png",    
+    "img" : "./imgs/tote-bon.png",    
     "name":"Canvas Tote",
     "price":"$40",
     "description": "Lorem ipsum dolor sit amet, consectetu"
     },
     
     {
-    "img" : "notebook-bon.png",    
+    "img" : "./imgs/notebook-bon.png",    
     "name":"Canvas Tote",
     "price":"$40",
     "description": "Lorem ipsum dolor sit amet, consectetu"
     },
 
     {
-    "img" : "newmug-bon.png",    
+    "img" : "./imgs/newmug-bon.png",    
     "name":"Canvas Tote",
     "price":"$40",
     "description": "Lorem ipsum dolor sit amet, consectetu"
     },
 
 {
-"img" : "shirt-bon.png",    
+"img" : "./imgs/shirt-bon.png",    
 "name":"Canvas Tote",
 "price":"$40",
 "description": "Lorem ipsum dolor sit amet, consectetu"
 },
 
 {
-"img" : "snap-bon.png",    
+"img" : "./imgs/snap-bon.png",    
 "name":"Canvas Tote",
 "price":"$40",
  "description": "Lorem ipsum dolor sit amet, consectetu"
 },
 
             {
- "img" : "shorts-bon.png",    
+ "img" : "./imgs/shorts-bon.png",    
  "name":"Canvas Tote",
  "price":"$40",
  "description": "Lorem ipsum dolor sit amet, consectetu"
@@ -45,7 +45,7 @@
 
 
 {
- "img" : "beanie-bon.png",    
+ "img" : "./imgs/beanie-bon.png",    
  "name":"Canvas Tote",
 "price":"$40",
  "description": "Lorem ipsum dolor sit amet, consectetu"
@@ -54,7 +54,7 @@
 
     
 {
-"img" : "oin-bon.png",    
+"img" : "./imgs/oin-bon.png",    
  "name":"Canvas Tote",
  "price":"$40",
 "description": "Lorem ipsum dolor sit amet, consectetu"
@@ -62,28 +62,28 @@
     },
 
 {
-    "img" : "newbaby-bon.png",    
+    "img" : "./imgs/newbaby-bon.png",    
     "name":"Canvas Tote",
     "price":"$40",
     "description": "Lorem ipsum dolor sit amet, consectetu"
     },
 
  {
-    "img" : "hoodie-bon.png",    
+    "img" : "./imgs/hoodie-bon.png",    
      "name":"Canvas Tote",
      "price":"$40",
      "description": "Lorem ipsum dolor sit amet, consectetu"
       },
 
     {
-    "img" : "bag.bon",    
+    "img" : "./imgs/bag.bon",    
     "name":"Canvas Tote",
     "price":"$40",
     "description": "Lorem ipsum dolor sit amet, consectetu"
          },
 
 {
- "img" : "apron-bon.png",    
+ "img" : "./imgs/tote-bon.png",    
 "name":"Canvas Tote",
  "price":"$40",
 "description": "Lorem ipsum dolor sit amet, consectetu"
