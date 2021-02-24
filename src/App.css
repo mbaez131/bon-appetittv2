@@ -3,12 +3,27 @@ body{
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: white;
+    /* background-image: url(../src/Components/imgs/bon2.jpeg); */
+    background-color: teal;
 }
+.hero-image{
+   
+    height: 100%;
+    width: 100%;
 
+}
+.videos{
+    flex-direction: row;
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
 .container{
-    background-image: url(../src/imgs/bon2.jpeg);
+    background-image: url(./Components/Home/bon2.jpeg);
     background-position: center;
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     opacity: 85%;
 }
@@ -28,15 +43,16 @@ body{
     right: -300px;
     margin: 0;
     transition: right .5s cubic-bezier(1, 0, 0, 1);
+    z-index: 1000;
 }
 
-.logo{
+.home-logo{
     margin: 35px;
     height:100px;
 }
 
 .hero--wrapper{
-    margin: 150px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,7 +63,7 @@ body{
     color: white;
     text-align: center;
     font-size: 5.8rem;
-    animation: red 50ms ease-in-out infinite;
+    animation: white 20s ease-in-out infinite;
     color: teal;
 } 
 
@@ -119,6 +135,61 @@ header{
     border-radius: 20px;
     padding: 15px;
     animation: neon 100ms ease-in-out infinite ;
+}
+
+/* Recipe page's CSS */
+.hero_recipes{
+    width: 100vw;
+    height: 35vh;
+    background-color: #62c6be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_recipes input {
+    -webkit-appearance: none;
+    border: none;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.recipes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.recipe-image{
+    width: 100%;
+}
+
+.Recipe-Cards {
+    width: 500px;
+    height: fit-content;
+    border: black 2px 2px;
+}
+
+.Recipe-Cards h2{
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Recipe-Cards button{
+    display: block;
+    margin: auto;
+    -webkit-appearance: none;
+    border: none;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.Hidden-Recipe{
+    display: none;
+}
+
+.Shown-Recipe {
+
 }
 
 @keyframes neon {
@@ -215,3 +286,193 @@ header{
         text-align: left;
     }
 }
+
+.validate{
+    width: 100%;
+    color: black;
+    font-size: x-large;
+}
+
+.l-heading {
+      color: teal;
+      font-size: 10rem;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-top: 1.875rem;
+      margin-bottom: 0.625rem;
+     
+    }
+    
+    #contact-form .from-group {
+      margin-bottom: 1.25rem;
+      color:  teal;
+      font-size: large;
+    }
+    
+    #contact-form label {
+      display: block;
+    }
+    
+    #contact-form input,
+    #comtact-form textarea {
+      width: 100%;
+      padding: 0.625rem;
+      border: 0.063rem teal;
+      margin: 1.25rem 0rem;
+    }
+    
+    #contact-form textarea {
+      height: 12.5rem;
+      width: 100%;
+      margin: 1.25rem 0rem;
+      color: teal;
+    }
+
+  label {
+    color: black;
+    font-size: 100px;
+  }
+  
+  .btn {
+    display: inline-block;
+    font-size: 1.125rem;
+    color: #fff;
+    background: teal;
+    padding: 0.813rem 1.25rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 1.25rem;
+    margin-top: 0.625rem;
+  }
+  
+  
+body{
+    background: linear-gradient(270deg, #1eb39f, #4bb7ed, #94ed4b);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+
+.container{
+    max-width: none;
+  }
+  
+  
+  
+  .product-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+    list-style: none;
+    margin-bottom: 250px;
+  }
+  
+  
+  
+  .picks{
+    font-size: 40px;
+      color: #482b2e;
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      margin-bottom: 80px;
+  }
+  
+  
+  .product-list {
+    list-style: none;
+  }
+  
+  
+  .picdim{
+    height: 400px;
+    width: 300px;
+  }
+  
+  .picdim:hover{
+  opacity: 80%;
+  }
+  
+  
+  
+  .pursename{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+  }
+  
+  
+  
+  .product-price {
+    font-family: 'Raleway', sans-serif;
+    color:#563437;
+    font-size: 23px;
+  }
+  
+  .pdesc{
+    font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  margin-bottom: 80px;
+  }
+  
+  
+/* Footer CSS */
+footer {
+    background-color:#52007A;
+    width: 100%;
+    height: 140px;
+    color:white;
+    text-align: center;
+    position: static;
+    bottom:0;
+    box-shadow: black 2px 2px 20px;
+    padding: 15px 0 0 0;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color:white;
+  }
+  
+  #feet {
+    margin: 5px;
+  }
+  
+  footer img {
+    height: 50px;
+    padding-top: 15px;
+  }
+  
+  footer a i {
+    font-size: 30px !important;
+    margin: 0 10px;
+  }
+  
+  #FooterPCLogo {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    color: white;
+    font-size: 2em;
+  }
+  
+  #FooterPCLogo p {
+    margin: 0 0 10px 0;
+  }

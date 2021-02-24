@@ -1,0 +1,90 @@
+/* 
+body{
+    background: linear-gradient(270deg, #1eb39f, #4bb7ed, #94ed4b);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+
+.container{
+    max-width: none;
+  }
+  
+  
+  
+  .product-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+    list-style: none;
+    margin-bottom: 250px;
+  }
+  
+  
+  
+  .picks{
+    font-size: 40px;
+      color: #482b2e;
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      margin-bottom: 80px;
+  }
+  
+  
+  .product-list {
+    list-style: none;
+  }
+  
+  
+  .picdim{
+    height: 400px;
+    width: 300px;
+  }
+  
+  .picdim:hover{
+  opacity: 80%;
+  }
+  
+  
+  
+  .pursename{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+  }
+  
+  
+  
+  .product-price {
+    font-family: 'Raleway', sans-serif;
+    color:#563437;
+    font-size: 23px;
+  }
+  
+  .pdesc{
+    font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  margin-bottom: 80px;
+  }
+  
+  
+   */
