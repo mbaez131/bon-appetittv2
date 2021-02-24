@@ -1,14 +1,8 @@
 import React from 'react'
 import products from './merch.json';
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-	Link
-} from 'react-router-dom';
 
 
-export default class Products extends React.Component {
+export default class Shop extends React.Component {
 render() {
   return (
     <div className="container">
