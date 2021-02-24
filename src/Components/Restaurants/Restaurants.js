@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import CardItemP from './CardItemP';
 import './CardsP.css';
@@ -81,3 +82,5 @@ function ProductCards() {
 }
 
 export default ProductCards
+=======
+>>>>>>> 4bbac1e682c7b45d302c0b61d9dc9a86526fb04f
