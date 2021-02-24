@@ -63,7 +63,7 @@ class Form extends React.Component {
   };
   render() {
     return (
-      <div>
+      <main className="rek">
         <section id="contact-form" className="py-3">
           <div className="container">
             <h1 className="l-heading">Contact Us</h1>
@@ -113,7 +113,7 @@ class Form extends React.Component {
             </form>
           </div>
         </section>
-      </div>
+      </main>
     );
   }
 }

@@ -27,7 +27,10 @@ body{
     width: 100%;
     opacity: 85%;
 }
-
+.rek{
+    background-image: url(./Components/Home/bon2.jpeg);
+    height:100%;
+}
 .navbar {
     display: flex;
     flex-direction: column;
