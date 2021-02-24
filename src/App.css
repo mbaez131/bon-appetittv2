@@ -43,6 +43,7 @@ body{
     right: -300px;
     margin: 0;
     transition: right .5s cubic-bezier(1, 0, 0, 1);
+    z-index: 1000;
 }
 
 .home-logo{
@@ -432,3 +433,46 @@ body{
   }
   
   
+/* Footer CSS */
+footer {
+    background-color:#52007A;
+    width: 100%;
+    height: 140px;
+    color:white;
+    text-align: center;
+    position: static;
+    bottom:0;
+    box-shadow: black 2px 2px 20px;
+    padding: 15px 0 0 0;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color:white;
+  }
+  
+  #feet {
+    margin: 5px;
+  }
+  
+  footer img {
+    height: 50px;
+    padding-top: 15px;
+  }
+  
+  footer a i {
+    font-size: 30px !important;
+    margin: 0 10px;
+  }
+  
+  #FooterPCLogo {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    color: white;
+    font-size: 2em;
+  }
+  
+  #FooterPCLogo p {
+    margin: 0 0 10px 0;
+  }
