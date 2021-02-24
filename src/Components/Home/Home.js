@@ -4,7 +4,7 @@ import ReactPlayer from "react-player"
 
 const Home = () => {
     return (
-        <main>
+        <main class="rek">
           <div class="home-logo">
           <img src="./imgs/bon-logo.png" alt="webiste logo"/>
  </div>
