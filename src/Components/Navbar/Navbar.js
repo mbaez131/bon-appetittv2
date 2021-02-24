@@ -10,7 +10,7 @@ import Home from './../Home/Home'
 import Contact from './../Contact/Contact'
 import Recipes from './../Recipes/Recipes'
 import Restaurant from './../Restaurants/Restaurants'
-import Shop from './../Shop/shop'
+import Shop from './../Shop/Shop'
 
 const NavBar = () => {
 
