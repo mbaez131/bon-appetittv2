@@ -34,13 +34,12 @@ db.connect((err) => {
 // });
 
 app.post("/Contact", (req, res) => {
-  let firstname = req.body.firstname;
-  let lastname = req.body.lastname;
+  let firstname = req.body.name;
   let email = req.body.email;
-  let subject = req.body.subject;
+  let message = req.body.message;
   db.query(
-    "INSERT INTO users (first_name, last_name, email, subject_box) VALUES (?, ?, ?, ?)",
-    [firstname, lastname, email, subject],
+    "INSERT INTO users (first_name, email, message) VALUES (?, ?, ?)",
+    [firstname, email, message],
     (err, data) => {
       if (err) {
         throw err;

@@ -1,71 +1,129 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Contact extends Component {
+const defaultState = {
+  name: "",
+  email: "",
+  message: "",
+  nameError: "",
+  emailError: "",
+  messageError: "",
+};
+
+class Form extends React.Component {
+  state = defaultState;
+
+  handleChange = (event) => {
+    const isCheckbox = event.target.type === "checkbox";
+    this.setState({
+      //T operator
+      [event.target.name]: isCheckbox
+        ? event.target.checked
+        : event.target.value,
+    });
+  };
+
+  //  set up to make sure requirements are met in form and set up the error message
+  validate = () => {
+    let nameError = "";
+    let emailError = "";
+    let messageError = "";
+
+    if (!this.state.name) {
+      nameError = "Name cannot be blank";
+    }
+
+    if (!this.state.email.includes("@")) {
+      emailError = "Invalid email. Must contain @";
+    }
+
+    if (!this.state.message) {
+      messageError = "Message required";
+    }
+
+    if (nameError || emailError || messageError) {
+      this.setState({ nameError, emailError, messageError });
+      return false;
+    }
+
+    return true;
+  };
+
+  handleSubmit = (event) => {
+    const isValid = this.validate();
+    if (isValid) {
+      console.log(this.state);
+
+      //will allow form to cler
+      // this.setState(defaultState);
+    } else {
+      event.preventDefault();
+    }
+  };
   render() {
     return (
-      <>
-        <div className="contactbox">
-          <div>
-            <h2>Connect</h2>
-            <p></p>
-          </div>
-          <div className="row">
-            <div className="column2">
-              {/* <img src={} width="500" height="400" /> */}
-            </div>
+      <main className="rek">
+        <section id="contact-form" className="py-3">
+          <div className="container">
+            <h1 className="l-heading">Contact Us</h1>
+            <form
+              onSubmit={this.handleSubmit}
+              action="http://localhost:4000/Contact"
+              method="POST"
+            >
+              <div class="home-logo">
+                <img src="./imgs/bon-logo.png" alt="webiste logo" />
+              </div>
+              <div className="form-group">
+                <label for="name">Name</label>
+                <div className="validate">{this.state.nameError}</div>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="name"
+                  value={this.state.name}
+                  onChange={this.handleChange}
+                />
+              </div>
 
-            <div className="column1">
-              <form
-                method="post"
-                action="http://localhost:4000/Contact"
-                noValidate
-                name="myForm"
-                onSubmit={this.validateForm}
-              >
-                <label for="fname">First Name</label>
-                <input
-                  type="text"
-                  id="fname"
-                  name="firstname"
-                  placeholder="Your first name.."
-                />
-                <label for="lname">Last Name</label>
-                <input
-                  type="text"
-                  id="lname"
-                  name="lastname"
-                  placeholder=" Your last name.."
-                />
+              <div className="form-group">
                 <label for="email">Email</label>
+                <div className="validate">{this.state.emailError}</div>
                 <input
-                  type="email"
-                  id="email"
+                  type="text"
                   name="email"
-                  placeholder="Your Email.."
+                  placeholder="email"
+                  value={this.state.email}
+                  onChange={this.handleChange}
                 />
-                {/* <label for="phone">Your phone number</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-                /> */}
+              </div>
 
-                <label for="subject">Subject</label>
+              <div
+                className="validate"
+                style={{ color: "#e4428e", width: "50%" }}
+              >
+                {this.state.messageError}
+              </div>
+
+              <div className="form-group">
+                <label for="message">Message</label>
                 <textarea
-                  id="subject"
-                  name="subject"
-                  placeholder="Your message.."
-                  // style="height:170px"
+                  placeholder=" would love to hear your feedback!"
+                  name="message"
+                  value={this.state.message}
+                  onChange={this.handleChange}
                 ></textarea>
-                <input type="submit" value="Submit" />
-              </form>
-            </div>
+              </div>
+
+              <button type="submit" className="btn">
+                Submit
+              </button>
+            </form>
           </div>
-        </div>
-      </>
+        </section>
+      </main>
+      // </div>
     );
   }
 }
 
-export default Contact;
+export default Form;
