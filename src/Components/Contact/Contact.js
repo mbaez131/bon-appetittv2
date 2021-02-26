@@ -121,7 +121,6 @@ class Form extends React.Component {
           </div>
         </section>
       </main>
-      // </div>
     );
   }
 }

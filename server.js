@@ -17,10 +17,10 @@ app.use(
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "password",
+  password: "Tyrekthompson",
   database: "bonapp",
+  insecureAuth : true
 });
-
 db.connect((err) => {
   if (err) {
     return err;

@@ -3,89 +3,77 @@
 
     {
     "img" : "./imgs/tote-bon.png",    
-    "name":"Canvas Tote",
     "price":"$40",
     "description": "Lorem ipsum dolor sit amet, consectetu"
     },
     
     {
     "img" : "./imgs/notebook-bon.png",    
-    "name":"Canvas Tote",
-    "price":"$40",
+    "price":"$12",
     "description": "Lorem ipsum dolor sit amet, consectetu"
     },
 
     {
     "img" : "./imgs/newmug-bon.png",    
-    "name":"Canvas Tote",
-    "price":"$40",
+    "price":"$7",
     "description": "Lorem ipsum dolor sit amet, consectetu"
     },
 
 {
 "img" : "./imgs/shirt-bon.png",    
-"name":"Canvas Tote",
-"price":"$40",
+"price":"$22",
 "description": "Lorem ipsum dolor sit amet, consectetu"
 },
 
 {
 "img" : "./imgs/snap-bon.png",    
-"name":"Canvas Tote",
-"price":"$40",
+"price":"$55",
  "description": "Lorem ipsum dolor sit amet, consectetu"
 },
 
             {
- "img" : "./imgs/shorts-bon.png",    
- "name":"Canvas Tote",
- "price":"$40",
+ "img" : "./imgs/shorts-bon.png",   
+ "price":"$30",
  "description": "Lorem ipsum dolor sit amet, consectetu"
   },
 
 
 {
- "img" : "./imgs/beanie-bon.png",    
- "name":"Canvas Tote",
-"price":"$40",
+ "img" : "./imgs/beanie-bon.png",   
+"price":"$20",
  "description": "Lorem ipsum dolor sit amet, consectetu"
     
     },
 
     
 {
-"img" : "./imgs/oin-bon.png",    
- "name":"Canvas Tote",
- "price":"$40",
+"img" : "./imgs/oin-bon.png",   
+ "price":"$10",
 "description": "Lorem ipsum dolor sit amet, consectetu"
         
     },
 
 {
     "img" : "./imgs/newbaby-bon.png",    
-    "name":"Canvas Tote",
-    "price":"$40",
+    "price":"$15",
     "description": "Lorem ipsum dolor sit amet, consectetu"
     },
 
  {
     "img" : "./imgs/hoodie-bon.png",    
-     "name":"Canvas Tote",
-     "price":"$40",
+     "price":"$35",
      "description": "Lorem ipsum dolor sit amet, consectetu"
       },
 
     {
-    "img" : "./imgs/bag.bon",    
-    "name":"Canvas Tote",
-    "price":"$40",
+    "img" : "./imgs/apron-bon.png",    
+    "price":"$22",
     "description": "Lorem ipsum dolor sit amet, consectetu"
          },
 
 {
  "img" : "./imgs/tote-bon.png",    
-"name":"Canvas Tote",
- "price":"$40",
+ "price":"$13",
 "description": "Lorem ipsum dolor sit amet, consectetu"
     }
     
