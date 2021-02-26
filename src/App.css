@@ -317,7 +317,7 @@ header{
     
     #contact-form input,
     #comtact-form textarea {
-      width: 100%;
+      width: 50%;
       padding: 0.625rem;
       border: 0.063rem teal;
       margin: 1.25rem 0rem;
@@ -325,7 +325,7 @@ header{
     
     #contact-form textarea {
       height: 12.5rem;
-      width: 100%;
+      width: 50%;
       margin: 1.25rem 0rem;
       color: teal;
     }
@@ -392,8 +392,8 @@ body{
   
   
   .picks{
-    font-size: 40px;
-      color: #482b2e;
+    font-size: 100px;
+      color: teal;
       text-align: center;
       font-family: 'Raleway', sans-serif;
       margin-bottom: 80px;
@@ -425,8 +425,8 @@ body{
   
   .product-price {
     font-family: 'Raleway', sans-serif;
-    color:#563437;
-    font-size: 23px;
+    color: black;
+    font-size: 30px;
   }
   
   .pdesc{
@@ -749,10 +749,12 @@ footer {
     height: 140px;
     color:white;
     text-align: center;
-    position: static;
+    position: fixed;
     bottom:0;
     box-shadow: black 2px 2px 20px;
     padding: 15px 0 0 0;
+    
+
   }
   
   footer a {
