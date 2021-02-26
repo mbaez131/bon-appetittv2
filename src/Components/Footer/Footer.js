@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => (
     <footer>
-    <div id="FooterPCLogo"><p>Bon-Appetitt</p></div>
+    <div id="FooterPCLogo"><p>Bon-Appétit</p></div>
     <p id="feet">Bon-Appetit © 2020</p>
     <a href="http://www.facebook.com" target="_blank" rel="noopener" title="Facebook logo"> <i className="fa fa-facebook" aria-hidden="true"> </i></a>
     <a href="http://www.twitter.com" target="_blank" rel="noopener" title="Twitter logo"> <i className="fa fa-twitter" aria-hidden="true"></i> </a>
