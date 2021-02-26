@@ -19,8 +19,8 @@ const db = mysql.createConnection({
   user: "root",
   password: "Tyrekthompson",
   database: "bonapp",
+  insecureAuth : true
 });
-
 db.connect((err) => {
   if (err) {
     return err;
