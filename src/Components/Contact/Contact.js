@@ -1,7 +1,4 @@
-
 import React from "react";
-
-
 
 const defaultState = {
   name: "",
@@ -9,7 +6,7 @@ const defaultState = {
   message: "",
   nameError: "",
   emailError: "",
-  messageError: ""
+  messageError: "",
 };
 
 class Form extends React.Component {
@@ -51,13 +48,13 @@ class Form extends React.Component {
     return true;
   };
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     const isValid = this.validate();
     if (isValid) {
       console.log(this.state);
-      
+
       //will allow form to cler
-    // this.setState(defaultState);
+      // this.setState(defaultState);
     } else {
       event.preventDefault();
     }
@@ -68,10 +65,14 @@ class Form extends React.Component {
         <section id="contact-form" className="py-3">
           <div className="container">
             <h1 className="l-heading">Contact Us</h1>
-            <form onSubmit={this.handleSubmit} action="https://formsubmit.co/thompsontyerek5@gmail.com" method="POST">
-            <div class="home-logo">
-          <img src="./imgs/bon-logo.png" alt="webiste logo"/>
- </div>
+            <form
+              onSubmit={this.handleSubmit}
+              action="http://localhost:4000/Contact"
+              method="POST"
+            >
+              <div class="home-logo">
+                <img src="./imgs/bon-logo.png" alt="webiste logo" />
+              </div>
               <div className="form-group">
                 <label for="name">Name</label>
                 <div className="validate">{this.state.nameError}</div>
@@ -96,7 +97,12 @@ class Form extends React.Component {
                 />
               </div>
 
-              <div className="validate" style={{ color: "#e4428e", width: "50%" }}>{this.state.messageError}</div>
+              <div
+                className="validate"
+                style={{ color: "#e4428e", width: "50%" }}
+              >
+                {this.state.messageError}
+              </div>
 
               <div className="form-group">
                 <label for="message">Message</label>
@@ -115,12 +121,8 @@ class Form extends React.Component {
           </div>
         </section>
       </main>
-      
-
-
     );
   }
 }
-
 
 export default Form;
